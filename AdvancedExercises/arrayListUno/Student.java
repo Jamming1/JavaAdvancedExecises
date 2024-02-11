@@ -5,15 +5,15 @@ import java.util.ArrayList;
 public class Student {
 String nome;
 int eta;
-
+    //metodo costruttore
     public Student(String nome, int eta){
     this.nome = nome;
     this.eta = eta;
  }
-
+    //override
     @Override
     public String toString() {
-        return "Studente 1A:\n" +
+        return "Studente nome e età:\n" +
                  nome +
                 ", " + eta;
     }
