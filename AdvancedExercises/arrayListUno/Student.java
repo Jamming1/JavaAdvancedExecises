@@ -13,9 +13,7 @@ int eta;
     //override
     @Override
     public String toString() {
-        return "Studente nome e età:\n" +
-                 nome +
-                ", " + eta;
+        return nome + ", " + eta;
     }
 }
 //Creare una classe Student che accenti nel costruttore il parametro name (String) e age (Int)

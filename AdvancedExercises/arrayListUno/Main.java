@@ -11,9 +11,8 @@ public class Main {
         classeA.add(new Student("Anna",15));
         classeA.add(new Student("Mara",16));
         classeA.add(new Student("Carl",15));
-        //ciclo for per stampare a video tutti gli studenti
-        for(int i= 0;i<classeA.size();i++){
-            System.out.println("Gli studenti di 1^ A sono: \n"+classeA.get(i));
+        // stampare a video tutti gli studenti
+        System.out.println("Gli studenti della Classe A sono: " + classeA);
+
         }
     }
-}
