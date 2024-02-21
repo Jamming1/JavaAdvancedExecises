@@ -2,15 +2,17 @@ package AdvancedExercises;
 public class Nullability {
 
     public static void main(String[] args) {
-        System.out.println(division(6,null));
-    }
-    private static boolean division(Integer x, Integer y){
         try {
-            int result = x / y;
-            System.out.println(result);
-        } catch (NullPointerException e) {
-            System.out.println("Attenzione: la variabile ha valore nullo!");
+            System.out.println(division(6, null));
+        } catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
         }
-        return false;
+    }
+
+    private static Integer division(Integer x, Integer y) {
+        if (x == null || y == null) {
+            throw new IllegalArgumentException("Numeratore o denominatore non possono essere nulli");
+        }
+        return x / y;
     }
 }
